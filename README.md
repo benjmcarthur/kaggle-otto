@@ -13,12 +13,12 @@
 <li><strong>Layer 3:</strong> Non-linear combination of meta learners</li>
 </ul>
 <p>The predictions of Layer 1 were used as training features for the Layer 2 meta learners, stacked according to the Variant A detailed <a href="https://github.com/vecxoz/vecstack">here</a>.</p>
-<h2 id="section"></h2>
+<h2 id="layer-1-models">Layer 1 Models</h2>
 <pre class=" language-markdown"><code class="prism  language-markdown">| Model      | Data Transformation | Model               | Data Transformation |
 |------------|---------------------|---------------------|---------------------|
 | Deep NN    |                     | LGMB Dart           |                     |
 | Deep NN    | log(X+1)            | LGMB GBDT           |                     |
-| Deep NN    | Standard Scaled     | MLP                 |                     |
+| Deep NN    | Standard Scaled     | SKLearn MLP                 |                     |
 | Deep NN    | 0-1 Scaled          | Naïve Bayes         |                     |
 | CatBoost   |                     | Naïve Bayes         | Standard Scaled     |
 | ExtraTrees |                     | Random Forest       |                     |
@@ -28,4 +28,11 @@
 | KNN        |                     | Logistic Regression | Standard Scaled     |
 | KNN        |                     |                     |                     |
 </code></pre>
+<h2 id="layer-2-models">Layer 2 Models</h2>
+<p>Three models used on the second layer:</p>
+<ul>
+<li>Deep Neural Net (pytorch)</li>
+<li>XGBoost (XGB)</li>
+<li>Calibrated Random Forest (SKLearn)</li>
+</ul>
 
