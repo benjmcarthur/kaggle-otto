@@ -22,11 +22,11 @@
 | Deep NN    | 0-1 Scaled          | Naïve Bayes         |                     |
 | CatBoost   |                     | Naïve Bayes         | Standard Scaled     |
 | ExtraTrees |                     | Random Forest       |                     |
-| KNN        |                     | Softmax             |                     |
-| KNN        |                     | XGBoost             |                     |
-| KNN        |                     | Logistic Regression |                     |
-| KNN        |                     | Logistic Regression | Standard Scaled     |
-| KNN        |                     |                     |                     |
+| KNN        |  0-1 Scaled         | Softmax             |                     |
+| KNN        |  0-1 Scaled         | XGBoost             |                     |
+| KNN        |  0-1 Scaled         | Logistic Regression |                     |
+| KNN        |  0-1 Scaled         | Logistic Regression | Standard Scaled     |
+| KNN        |  0-1 Scaled         |                     |                     |
 </code></pre>
 <h2 id="layer-2-models">Layer 2 Models</h2>
 <p>Three models used on the second layer:</p>
