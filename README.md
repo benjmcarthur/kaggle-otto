@@ -18,7 +18,7 @@
 |------------|---------------------|---------------------|---------------------|
 | Deep NN    |                     | LGMB Dart           |                     |
 | Deep NN    | log(X+1)            | LGMB GBDT           |                     |
-| Deep NN    | Standard Scaled     | SKLearn MLP                 |                     |
+| Deep NN    | Standard Scaled     | SKLearn MLP         |                     |
 | Deep NN    | 0-1 Scaled          | Naïve Bayes         |                     |
 | CatBoost   |                     | Naïve Bayes         | Standard Scaled     |
 | ExtraTrees |                     | Random Forest       |                     |
